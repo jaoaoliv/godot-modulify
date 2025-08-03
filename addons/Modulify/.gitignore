@@ -1,0 +1,24 @@
+# Godot-specific folders
+.import/
+.godot/
+
+# Builds/exports (caso tenha)
+export/
+build/
+
+# Mac/Unix hidden files
+.DS_Store
+
+# Windows hidden files
+Thumbs.db
+desktop.ini
+
+# Backup/Swap files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+# VSCode config (opcional)
+.vscode/

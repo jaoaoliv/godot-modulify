@@ -1,0 +1,187 @@
+[gd_scene load_steps=9 format=3 uid="uid://w0pkxdro48ag"]
+
+[ext_resource type="Script" uid="uid://ckbvrol7iqlqh" path="res://addons/Modulify/UI/modulify_dock.gd" id="1_5emfn"]
+[ext_resource type="LabelSettings" uid="uid://dgu2v3dhq3r3i" path="res://addons/Modulify/UI/Resources/title_lblset.tres" id="2_75m1u"]
+[ext_resource type="LabelSettings" uid="uid://clu2ml44ud67x" path="res://addons/Modulify/UI/Resources/tips_lblset.tres" id="3_3r8da"]
+[ext_resource type="LabelSettings" uid="uid://dpvn5njvw5gvk" path="res://addons/Modulify/UI/Resources/Title2_lblset.tres" id="4_3r8da"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_75m1u"]
+
+[sub_resource type="Theme" id="Theme_3r8da"]
+VSeparator/styles/separator = SubResource("StyleBoxEmpty_75m1u")
+
+[sub_resource type="LabelSettings" id="LabelSettings_ryhji"]
+font_color = Color(0.596078, 0.596078, 0.596078, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_5emfn"]
+font_color = Color(1, 0.375431, 0.331635, 1)
+
+[node name="ModulifyDock" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_3r8da")
+script = ExtResource("1_5emfn")
+
+[node name="TabContainer" type="TabContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+current_tab = 1
+
+[node name="Criar Personagem" type="VBoxContainer" parent="TabContainer"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="Descrição" type="Label" parent="TabContainer/Criar Personagem"]
+layout_mode = 2
+text = "Configuração Inicial
+
+Escolha um nome para seu personagem e defina a perspectiva do seu jogo:
+
+◦ Sidescroller (visão lateral)
+◦ Top-down (visão de cima)"
+label_settings = SubResource("LabelSettings_ryhji")
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="VSeparator" type="VSeparator" parent="TabContainer/Criar Personagem"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Subtitulo1" type="Label" parent="TabContainer/Criar Personagem"]
+layout_mode = 2
+text = "Digite o nome do Personagem:"
+label_settings = ExtResource("2_75m1u")
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="LineEdit" type="LineEdit" parent="TabContainer/Criar Personagem"]
+layout_mode = 2
+placeholder_text = "Ex: Player, Boss, enemy01..."
+
+[node name="Label" type="Label" parent="TabContainer/Criar Personagem"]
+layout_mode = 2
+text = "O nome escolhido será utilizado tanto para a cena principal do personagem quanto para a criação da estrutura de pastas no repositório do projeto.
+
+O nome não pode conter espaços ou caracteres especiais, pois será usado para criar arquivos e pastas."
+label_settings = ExtResource("3_3r8da")
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="VSeparator2" type="VSeparator" parent="TabContainer/Criar Personagem"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Subtitulo2" type="Label" parent="TabContainer/Criar Personagem"]
+layout_mode = 2
+text = "Selecione a Perspectiva do seu Personagem:"
+label_settings = ExtResource("2_75m1u")
+autowrap_mode = 3
+
+[node name="OptionButton" type="OptionButton" parent="TabContainer/Criar Personagem"]
+layout_mode = 2
+selected = 0
+item_count = 2
+popup/item_0/text = "Sidescroller"
+popup/item_0/id = 0
+popup/item_1/text = "Top-down"
+popup/item_1/id = 1
+
+[node name="Label2" type="Label" parent="TabContainer/Criar Personagem"]
+layout_mode = 2
+text = "A perspectiva selecionada define os módulos e estados sugeridos a seguir, facilitando a criação do seu personagem. Você também pode criar um template em branco para personalização completa."
+label_settings = ExtResource("3_3r8da")
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="VSeparator3" type="VSeparator" parent="TabContainer/Criar Personagem"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Button" type="Button" parent="TabContainer/Criar Personagem"]
+layout_mode = 2
+text = "Criar Personagem"
+
+[node name="lbl_erro" type="Label" parent="TabContainer/Criar Personagem"]
+layout_mode = 2
+label_settings = SubResource("LabelSettings_5emfn")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="States e Modules" type="VBoxContainer" parent="TabContainer"]
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="LabelCenaAberta" type="Label" parent="TabContainer/States e Modules"]
+layout_mode = 2
+text = "Editando: "
+label_settings = ExtResource("4_3r8da")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="VSeparator" type="VSeparator" parent="TabContainer/States e Modules"]
+layout_mode = 2
+
+[node name="LabelInfo" type="Label" parent="TabContainer/States e Modules"]
+layout_mode = 2
+text = "“Para adicionar States ou Modules, abra a cena do personagem no editor e use os botões abaixo.
+Os nodes e scripts serão inseridos automaticamente na árvore da cena aberta.”"
+label_settings = ExtResource("3_3r8da")
+autowrap_mode = 3
+
+[node name="Label" type="Label" parent="TabContainer/States e Modules"]
+layout_mode = 2
+text = "Digite abaixo o nome do State a ser criado:"
+label_settings = ExtResource("2_75m1u")
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="LineEditState" type="LineEdit" parent="TabContainer/States e Modules"]
+layout_mode = 2
+
+[node name="Label3" type="Label" parent="TabContainer/States e Modules"]
+layout_mode = 2
+text = "Ao criar o State sera criado um Node com o nome do state e ele herdara o script com o nome correspondente"
+label_settings = ExtResource("3_3r8da")
+autowrap_mode = 3
+
+[node name="ButtonCriarState" type="Button" parent="TabContainer/States e Modules"]
+layout_mode = 2
+text = "Criar state"
+
+[node name="VSeparator2" type="VSeparator" parent="TabContainer/States e Modules"]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="TabContainer/States e Modules"]
+layout_mode = 2
+text = "Digite abaixo o nome do Modulo a ser criado:"
+label_settings = ExtResource("2_75m1u")
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="LineEditModule" type="LineEdit" parent="TabContainer/States e Modules"]
+layout_mode = 2
+
+[node name="Label4" type="Label" parent="TabContainer/States e Modules"]
+layout_mode = 2
+text = "Ao criar o Modulo sera criado um Node com o nome do Modulo e ele herdara o script com o nome correspondente"
+label_settings = ExtResource("3_3r8da")
+autowrap_mode = 3
+
+[node name="ButtonCriarModule" type="Button" parent="TabContainer/States e Modules"]
+layout_mode = 2
+text = "Criar module"
+
+[node name="LabelErro" type="Label" parent="TabContainer/States e Modules"]
+layout_mode = 2
+autowrap_mode = 3
