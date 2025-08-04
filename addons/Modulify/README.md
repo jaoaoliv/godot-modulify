@@ -53,7 +53,7 @@ Ideal para:
 
 - Após ativar o plugin nas configuraçoes do projeto ira aparecer um botão para ativar o plugin no canto superior direito da tela
 
-![Exemplo Ativação do Plugin](addons/Modulify/Icons/instructions/instructions1.png)
+![Exemplo Ativação do Plugin](https://raw.githubusercontent.com/jaoaoliv/godot-modulify/refs/heads/main/addons/Modulify/Icons/instructions/instructions1.png)
 
 ### Criando personagem modular
 - Na aba "Criar Personagem" voce poderá escolher o nome do Personagem que será criado, assim esse nome sera o nome do nó raiz da sua cena que sera gerada automaticamente.
@@ -66,7 +66,7 @@ Ideal para:
 --- NOTA: A opçao de escolha da Perspectiva nao altera até o momento nada no uso do plugin, futuramente teremos templates de modulos prontos como por exemplo: walk, run, jump. esses estarao disponiveis na proxima aba "States e Modules" para serem anexados automaticamente ao seu personagem assim agilizando seu trabalho.
 
 
-![Exemplo de uso da Aba 1](addons/Modulify/Icons/instructions/instructions2.png)
+![Exemplo de uso da Aba 1](https://raw.githubusercontent.com/jaoaoliv/godot-modulify/refs/heads/main/addons/Modulify/Icons/instructions/instructions2.png)
 
 ### Criando novos states/modules
 
@@ -77,7 +77,7 @@ Ideal para:
 
 --- Você verá que o State/Module foi adicionado diretamente como um Node (com o nome escolhido) como filho de States/Modules ja com o script integrado! Basta editar o conteudo dos scripts para funcionar como desejar!
 
-![Exemplo de uso da Aba 2](addons/Modulify/Icons/instructions/instructions3.png)
+![Exemplo de uso da Aba 2](https://raw.githubusercontent.com/jaoaoliv/godot-modulify/refs/heads/main/addons/Modulify/Icons/instructions/instructions3.png)
 
 ---
 
