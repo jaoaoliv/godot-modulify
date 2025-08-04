@@ -49,29 +49,52 @@ Ideal para:
 
 ## 📚 Exemplos de Uso
 
-### Criando personagem modular
+### Ativando Plugin
 
-![GIF ou screenshot da UI da Aba 1]
+- Após ativar o plugin nas configuraçoes do projeto ira aparecer um botão para ativar o plugin no canto superior direito da tela
+
+![Exemplo Ativaçao do Plugin] (\addons\Modulify\Icons\instructions\instructions1.png)
+
+### Criando personagem modular
+- Na aba "Criar Personagem" voce poderá escolher o nome do Personagem que será criado, assim esse nome sera o nome do nó raiz da sua cena que sera gerada automaticamente.
+- Passo 1 - Digite o nome do Personagem a ser criado
+- passo 2 - escolha a Perspectiva do seu personagem 
+- Passo 3 - Clique no botao criar personagem e veja a magica acontecer!
+
+--- Você terá uma cena criada com o nome do personagem escolhido e nela ja pos padrao como raiz um CharactherBody2D e os Nodes States e Modules. Todos os scripts ja estarao integrados aos nós corretamente!
+
+--- NOTA: A opçao de escolha da Perspectiva nao altera até o momento nada no uso do plugin, futuramente teremos templates de modulos prontos como por exemplo: walk, run, jump. esses estarao disponiveis na proxima aba "States e Modules" para serem anexados automaticamente ao seu personagem assim agilizando seu trabalho.
+
+
+![Exemplo de uso da Aba 1] (addons\Modulify\Icons\instructions\instructions2.png)
 
 ### Criando novos states/modules
 
-![GIF ou screenshot da UI da Aba 2]
+- Na aba "States e Modules" você podera adicionar states e modules diretamente ao personagem que desejar, ja com scripts integrados para agilizar seu trabalho.
+
+- Passo 1 - Abra a cena que deseja editar e verifique se o nome da cena aparece no topo da aba
+- Passo 2 - Digite o nome do State/Module no campo correspondente e clique no botao Criar
+
+--- Você verá que o State/Module foi adicionado diretamente como um Node (com o nome escolhido) como filho de States/Modules ja com o script integrado! Basta editar o conteudo dos scripts para funcionar como desejar!
+
+![Exemplo de uso da Aba 2]addons\Modulify\Icons\instructions\instructions3.png
 
 ---
 
 ## 💡 Dicas
 
-- Edite os templates de script para customizar ainda mais o workflow do seu time!
+- Todos os scripts gerados estao bem comentados com detalhes do funcionamento!
 - Novos módulos/estados aparecem imediatamente na cena – salve a cena para persistir.
 
 ---
 
 ## 📝 Licença
 
-MIT – Use livremente, contribua, modifique e credite se puder!  
-Se este plugin te ajudou, considere apoiar ou dar uma estrela no repositório!
+Este plugin está licenciado sob a licença [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/deed.pt_BR).
 
----
+- Você pode usar o plugin em projetos pessoais, acadêmicos e comerciais, desde que mantenha a autoria.
+- Não é permitida a modificação ou redistribuição de versões alteradas.
+- Para licenças especiais (suporte, customização), entre em contato: [seu email/contato].
 
 ## ☕ Apoie
 
@@ -81,7 +104,7 @@ Se quiser apoiar o projeto, você pode contribuir pelo [Itch.io](https://bitsoul
 
 ## 🙋‍♂️ Sobre
 
-Feito por [Seu Nome / Bitsouls Studios](https://jaoaoliv.github.io/bitsouls-portfolio/).  
+Feito por [Jaoaoliv / Bitsouls Studios](https://jaoaoliv.github.io/bitsouls-portfolio/).  
 Entre em contato, siga no [YouTube](https://www.youtube.com/@BitsoulsStudios) e [LinkedIn](https://www.linkedin.com/in/jaoaoliv-dev).
 
 ---
