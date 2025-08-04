@@ -3,6 +3,8 @@
 ![Godot 4.x](https://img.shields.io/badge/godot-4.x-blue?logo=godot-engine)
 ![Plugin](https://img.shields.io/badge/type-editor%20plugin-orange)
 ![Status](https://img.shields.io/badge/status-experimental-brightgreen)
+![Licença: CC BY-ND 4.0](https://img.shields.io/badge/license-CC--BY--ND%204.0-lightgrey)
+
 
 ## ✨ O que é?
 
